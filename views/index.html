@@ -34,6 +34,15 @@
           <th>Janr</th>
         </tr>
       </thead>
+      <tbody>
+        <% data.forEach( book =>  { %>
+        <tr>
+            <td><%= book.title %> </td>
+            <td><%= book.author %> </td>
+            <td><%= book.genre %> </td>
+        </tr>
+        <% }) %>
+      </tbody>
     </table>
 
 
